@@ -57,7 +57,11 @@ def message_results():
     context = {
         'users_input_message': request.form.get("message")
         'users_secret_list': sorted("users_input_message")
-    return request.sort_letters(message_results)
+    return request.sort_letters(message_results) 
+
+    }
+
+    
 
 
 @app.route('/calculator')
