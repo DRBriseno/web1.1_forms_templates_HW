@@ -1,0 +1,25 @@
+{% extends 'home.html' %}
+
+{% block title%}
+    CALCULATOR RESULTS
+{% endblock %}
+
+{% block content%}
+    <form action="/calculator_results" method="GET">
+
+         Your result is: <br/>
+
+            {% if calculation == "add" -%}
+            {{ op1 + op2 }}
+            {% elif calculation == "subtract" -%}
+            {{ op1 - op2 }}
+            {% elif calculation == "multiply" -%}
+            {{ op1 * op2 }}
+            {% elif calculation == "divide" -%}
+            {{ op1 / op2 }}
+            {%- endif %} </p>
+            
+    </form>
+        <br>
+    </form>
+{% endblock %}

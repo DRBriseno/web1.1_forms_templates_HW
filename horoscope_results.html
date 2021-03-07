@@ -1,0 +1,30 @@
+{% extends 'home.html' %}
+
+{% block title%}
+    HOROSCOPE RESULTS
+{% endblock %}
+
+{% block content%}
+    <form action="/horoscope_results" method="GET">
+
+       HOROSCOPE_PERSONALITIES = {
+    'aries': 'Adventurous and energetic',
+    'taurus': 'Patient and reliable',
+    'gemini': 'Adaptable and versatile',
+    'cancer': 'Emotional and loving',
+    'leo': 'Generous and warmhearted',
+    'virgo': 'Modest and shy',
+    'libra': 'Easygoing and sociable',
+    'scorpio': 'Determined and forceful',
+    'sagittarius': 'Intellectual and philosophical',
+    'capricorn': 'Practical and prudent',
+    'aquarius': 'Friendly and humanitarian',
+    'pisces': 'Imaginative and sensitive'
+}
+ 
+ Your Horoscope sign is {users_horoscope_sign} which makes you {users_personality} and your lucky number is {users_lucky_number}! <br/>
+ 
+    </form>
+        <br>
+    </form>
+{% endblock %}
